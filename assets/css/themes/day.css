@@ -1,5 +1,4 @@
 /*for text*/
-
 .normalText{
     color : var(--normal_text_col) !important;
 }
@@ -15,23 +14,6 @@
 
 .card-body{
     color : var(--normal_text_col) !important;
-}
-
-
-.textSize16{
-    font-size : 16pt !important;
-}
-.textSize20{
-    font-size : 20pt !important;
-}
-.textRed{
-    color : red;
-}
-.textBold{
-    font-weight: bold !important;
-}
-.dayHead{
-    color : var(--custom_green) !important;
 }
 
 .mainBg{
@@ -278,3 +260,15 @@ div.user-account.dropdown-menu>a.dropdown-item:hover{
 }
 
 /*for icon*/
+
+
+/*//for admin*/
+
+.kt-aside {
+
+    box-shadow: 0px 0px 28px 0px rgba(82, 63, 105, 0.08);
+}
+
+.kt-checkbox > span:after {
+    border: solid #353c0e;
+}

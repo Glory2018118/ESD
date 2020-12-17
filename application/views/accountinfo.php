@@ -12,7 +12,7 @@
   <div class = "row mt-5 mb-5">
     <div class = "col-md-3"></div>
     <h3 class="dayHead mt-5" >
-      <i class="flaticon2-user-outline-symbol"></i> &nbspACCOUNT INFORMATION
+      <i class="flaticon2-user-outline-symbol normalText1"></i> &nbspACCOUNT INFORMATION
 
     </h3>
 

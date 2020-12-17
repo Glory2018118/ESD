@@ -12,7 +12,7 @@
   <div class = "row mt-5 mb-5">
     <div class = "col-md-3"></div>
     <h3 class="dayHead mt-5" >
-      <i class="flaticon-interface-11"></i> &nbspBILLING INFORMATION
+      <i class="flaticon-interface-11 normalText1"></i> &nbspBILLING INFORMATION
 
     </h3>
 

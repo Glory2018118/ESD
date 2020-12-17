@@ -25,8 +25,9 @@ class Home extends CI_Controller {
       $this->load->view('admin/common/header_html');
       $this->load->view('admin/common/header');
       $this->load->view('admin/home');
-      $this->load->view('admin/common/footer_html');
       $this->load->view('admin/common/footer');
+      $this->load->view('admin/common/footer_html');
+
 	}
 }
 ?>

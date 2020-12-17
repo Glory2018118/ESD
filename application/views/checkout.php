@@ -20,7 +20,7 @@
         <div class="mycart-menu cartBg">
           <div class = "kt-form kt-form--label-right">
             <!-- begin:: Mycart -->
-            <div class="kt-mycart p-3">
+            <div class="kt-mycart p-3" id = "checkOutCart">
               <div class="kt-mycart__head p-0">
                 <div class="kt-mycart__info">
                   <span class="kt-mycart__title pl-2">Order Summary</span>
@@ -49,30 +49,26 @@
                     <span class = "kt-mycart__subtitle col-md-4 ml-0 pl-0">Coupon Code</span>
                     <input class = "form-control col-md-7" align = "right" name = "couponCode">
                   </div>
-                  <button typ="button" class="btn update-cart p-0"> Update cart <i class="flaticon-refresh"></i></button>
+                  <button typ="button" class="btn update-cart p-0 normalText"> Update cart <i class="flaticon-refresh"></i></button>
                 </div>
                 <div class="kt-mycart__section p-1 ml-2 ">
                   <div class="kt-mycart__price  p-1">
                     <span class="kt-mycart__subtitle normalText">Subtotal:</span>
-                    <span class="ml-3 float-right">€ 2.97</span>
+                    <span class="ml-3 float-right normalText">€ 2.97</span>
 
                   </div>
                   <div class="kt-mycart__price  p-1">
                     <span class="kt-mycart__subtitle normalText">Taxation:</span>
-                    <span class="kt-mycart__price float-right ml-3">€ 0.74</span>
+                    <span class="kt-mycart__price float-right ml-3 normalText">€ 0.74</span>
                   </div>
                   <hr class = "cartHr">
                   <div class="kt-mycart__price  p-1">
                     <span class="kt-mycart__subtitle textSize16">Order Total:</span>
-                    <span class="kt-mycart_price float-right ml-3">€ 3.71</span>
+                    <span class="kt-mycart_price float-right ml-3 dayHead textSize16">€ 3.71</span>
                   </div>
                 </div>
               </div>
-              <div class="kt-mycart__footer p-0">
-                <div class="kt-mycart__button kt-align-right">
-                  <a href = "<?=base_url()?>checkout"><button type="button" class="btn btn-checkout">Checkout</button></a>
-                </div>
-              </div>
+
             </div>
             <!-- end:: Mycart -->
           </divform>
@@ -81,23 +77,23 @@
     </div>
       <div class = "col-md-9">
         <div class = "container-fluid">
-          <div class = "mb-5">
-          <div>
+          <div class = "p-5">
+            <div>
             <h3 class="dayHead mb-4" >
                 Billing Information
             </h3>
-          </div>
-          <p class = "normalText">Choose a payment option below and ll out the appropriate information.</p>
-          <div class = "col-md-12">
-            <button class = "btn btn-signup" id = "creditCard">Credit card</button>
-            <button class = "btn btn-signup" id = "payPal">PayPal</button>
-          </div>
+            </div>
+            <p class = "normalText">Choose a payment option below and ll out the appropriate information.</p>
+            <div class = "col-md-12">
+              <button class = "btn btn-signup" id = "creditCard">Credit card</button>
+              <button class = "btn btn-signup" id = "payPal">PayPal</button>
+            </div>
 
           </div>
           <div class = "row">
 
             <div class = "col-md-6">
-              <div class = "container-fluid row normalText">
+              <div class = "container-fluid p-5 row normalText">
 
                 <div class = "mb-3">
                   <h3 class="dayHead" >
@@ -168,7 +164,7 @@
               </div>
             </div>
             <div class = "col-md-6">
-              <div class = "container-fluid row normalText">
+              <div class = "container-fluid p-5 row normalText">
 
                 <div class = "mb-3">
                   <h3 class="dayHead" >

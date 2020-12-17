@@ -24,17 +24,17 @@
       </div>
     </div>
     <div class="kt-footer__bottom p-md-2">
-      <div class="kt-container kt-container--fluid">
+      <div class="kt-container kt-container--fluid ">
         <div class="row kt-align-center">
           <div class="col-lg-4 p-0"></div>
           <div class="col-lg-4 p-0">
-            <span class = "p-3" >© 2021, Ebuildix OÜ, All Rights Reserved.</span>
+            <span class = "" >© 2021, Ebuildix OÜ, All Rights Reserved.</span>
           </div>
           <div class="col-lg-4 p-0">
-            <a class = "p-2" href = "<?=base_url()?>faq" target="_blank">FAQ</a>
-            <a class = "p-2" target="_blank">Teams & Conditions</a>
-            <a class = "p-2" target="_blank">Privacy Policy</a>
-            <a class = "p-2" target="_blank">Cookies Policy</a>
+            <a class = "p-2 foot" href = "<?=base_url()?>faq" target="_blank">FAQ</a>
+            <a class = "p-2 foot" target="_blank">Teams & Conditions</a>
+            <a class = "p-2 foot" target="_blank">Privacy Policy</a>
+            <a class = "p-2 foot" target="_blank">Cookies Policy</a>
           </div>
         </div>
       </div>

@@ -29,6 +29,7 @@ class Faq extends CI_Controller {
   {
     parent::__construct();
     $this->load->helper('url_helper');
+    $this->load->library('session');
   }
 
   public function index()

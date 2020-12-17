@@ -13,7 +13,7 @@
   <div class = "row mt-5 mb-5">
     <div class = "col-md-3"></div>
     <h3 class="dayHead mt-5 " >
-      <i class="flaticon-lock"></i> &nbspACCOUNT ACCESS
+      <i class="flaticon-lock normalText"></i> &nbspACCOUNT ACCESS
 
     </h3>
 
@@ -43,12 +43,14 @@
           <input type="password" class="form-control" name = "confirmNewPassword">
 
         </div>
-        <div class="form-group row mb-5">
+        <div class="form-group row mb-3">
           <button type="submit" class="btn btn-md btn-save mt-5 mb-5">Save Password</button>
 
         </div>
 
-
+        <div class = "form-group row mb-3">
+          <a href = "accountdelete"> <span class = "normalText underlineText"> Delete my account </span></a>
+        </div>
       </div>
 
 
@@ -56,5 +58,6 @@
 
     <div class = "col-md-3"></div>
   </div>
+
 </div>
 

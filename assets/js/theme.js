@@ -1,4 +1,5 @@
 var ThemeSwitcher = function() {
+    var themeToggle;
     var default_theme;
     var theme_panel;
     var initialized = false;
@@ -8,30 +9,38 @@ var ThemeSwitcher = function() {
         var active_theme = $("[theme-style="+theme+"]", theme_panel);
         theme_styles.removeClass("active");
         active_theme.addClass("active");
-        if (theme == "day") {
+        if (theme == "light") {
             $(".theme_switcher", theme_panel).animate({left:"2px"}, 50, "linear");
-        } else if (theme == "night") {
+        } else if (theme == "dark") {
             $(".theme_switcher", theme_panel).animate({left:"35px"}, 50, "linear");
         }
-        $("#theme_style_css").attr("href", base_url + "assets/css/themes/" + theme + ".css");
         Cookies.set("theme", theme);
     }
     return {
         init: function() {
-            default_theme = "day";
-            base_url = $("#BASE_URL").val();
             theme_panel = $(".theme_panel");
+            themeToggle = new KTToggle('theme_panel', {
+                target: 'body',
+                targetState: 'theme_dark',
+                togglerState: 'theme_panel--dark'
+            });
+
+            themeToggle.on('toggle', function(){
+                var state = themeToggle.getState();
+                if (state == 'on') {
+                    switchTheme("dark");
+                } else if (state == 'off') {
+                    switchTheme("light");
+                }
+            });
+
+            default_theme = "day";
             var theme = Cookies.get("theme");
             if (theme == undefined) {
                 theme = default_theme;
             }
             switchTheme(theme);
             
-            theme_panel.click(function(e) {
-                var theme = $(":not(.active)", theme_panel).attr("theme-style");
-                ThemeSwitcher.switch(theme);
-                e.preventDefault();
-            });
             initialized = true;
         },
         switch: function (theme) {

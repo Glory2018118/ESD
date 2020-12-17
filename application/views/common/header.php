@@ -1,5 +1,10 @@
 
 <!-- begin::Body -->
+<?php
+//  session_start();
+//  var_dump($_SESSION);
+?>
+
 <input type=hidden id="BASE_URL" name="BASE_URL" value="<?=base_url()?>">
 <body class="kt-page--loading-enabled kt-page--loading kt-quick-panel--right kt-demo-panel--right kt-offcanvas-panel--right kt-header--fixed kt-header--minimize-topbar kt-header-mobile--fixed kt-subheader--enabled kt-subheader--transparent kt-page--loading">
   <!-- begin:: Header Mobile -->
@@ -298,20 +303,20 @@
                         </div>
                         <div class="kt-mycart__section m-2 mt-3 mb-3">
                           <span class="kt-mycart__subtitle">3 items in cart</span>
-                          <button typ="button" class="btn update-cart p-0"> Update cart <i class="flaticon-refresh"></i></button>
+                          <button typ="button" class="btn update-cart p-0 normalText1"> Update cart <i class="flaticon-refresh"></i></button>
                         </div>
                         <div class="kt-mycart__section p-1">
                           <div class="kt-mycart__price kt-align-right p-1">
                             <span class="kt-mycart__subtitle">Subtotal:</span>
-                            <span class="kt-mycart__price ml-3">€ 2.97</span>
+                            <span class="kt-mycart__price ml-3 normalText1">€ 2.97</span>
                           </div>
                           <div class="kt-mycart__price kt-align-right p-1">
                             <span class="kt-mycart__subtitle">Taxation:</span>
-                            <span class="kt-mycart__price ml-3">€ 0.74</span>
+                            <span class="kt-mycart__price ml-3 normalText1">€ 0.74</span>
                           </div>
                           <div class="kt-mycart__price kt-align-right p-1">
                             <span class="kt-mycart__subtitle">Total:</span>
-                            <span class="kt-mycart_price ml-3">€ 3.71</span>
+                            <span class="kt-mycart_price ml-3 dayHead">€ 3.71</span>
                           </div>
                         </div>
                       </div>
@@ -341,26 +346,38 @@
                     <a href="<?=base_url()?>myaccount/accountinfo" class="dropdown-item">Account Information</a>
                     <a href="<?=base_url()?>myaccount/bill" class="dropdown-item">Billing Information</a>
                     <a href="<?=base_url()?>myaccount/accountaccess" class="dropdown-item">Hellp / Support</a>
-                    <a class="dropdown-item" id = "signOut">Log&nbspOut</a>
+
+                  </div>
+                  <div class="kt-header__topbar-item">
+                    <div class="kt-header__topbar-wrapper">
+                      <div class="kt-header__topbar-wrapper">
+                        <a href = "<?=base_url()?>user/logout">
+                          <button class = "btn btn-signup"> Log&nbspout </button>
+                        </a>
+                      </div>
+                    </div>
                   </div>
                   <?php
                 } else {?>
                   <div class="kt-header__topbar-wrapper">
                     <button class = "btn btn-login">
-                      <a href = "login.php">Login</a>
+                      <a href = "<?=base_url()?>user/login">Login</a>
                     </button>
+                  </div>
+                  <div class="kt-header__topbar-item">
+                    <div class="kt-header__topbar-wrapper">
+                      <div class="kt-header__topbar-wrapper">
+                        <a href = "<?=base_url()?>user/signup">
+                          <button class = "btn btn-signup"> Sign&nbspUp </button>
+                        </a>
+                      </div>
+                    </div>
                   </div>
                   <?php
                 }
                 ?>
               </div>
-              <div class="kt-header__topbar-item">
-                <div class="kt-header__topbar-wrapper">
-                  <div class="kt-header__topbar-wrapper">
-                    <button class = "btn btn-signup"> Sign&nbspUp </button>
-                  </div>
-                </div>
-              </div>
+
               <!--end: User bar-->
             </div>
             <!-- end: Header Topbar -->

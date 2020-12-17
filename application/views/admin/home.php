@@ -13,7 +13,7 @@
   <div class = "kt-form kt-form--label-right descriptBg mt-5">
     <div class="form-group row kt mt-5 mb-5" >
         <label class="col-form-label col-md-4 dayHead textBold">Search</label>
-        <input class = "form-control col-md-4 kt-align-center" name = "globalSearch" >
+        <input class = "form-control col-md-4 kt-align-center text-left" name = "globalSearch"  >
         <div class="input-group-append col-md-4">
           <span class = "btn btn-globalSearch" >
             <i class="la la-search"></i>

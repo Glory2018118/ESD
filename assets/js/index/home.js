@@ -41,6 +41,18 @@ var KTDatatableDataLocalDemo = function() {
 
                 class : 'table-striped myFavouriteTable ',
                 customScrollbar : false,
+                // datatable UI icons
+                icons: {
+                    sort: {asc: 'flaticon2-sort', desc: 'flaticon2-sort'},
+                    pagination: {
+                        next: 'flaticon2-next',
+                        prev: 'flaticon2-back',
+                        first: 'flaticon2-fast-back',
+                        last: 'flaticon2-fast-next',
+                        more: 'flaticon-more-1',
+                    },
+                    rowDetail: {expand: 'fa fa-caret-down', collapse: 'fa fa-caret-right'},
+                },
             },
             // toolbar
             toolbar: {
@@ -57,8 +69,8 @@ var KTDatatableDataLocalDemo = function() {
                 },
                 icons: {
                     sort: {
-                        asc: 'la la-arrow-up',
-                        desc: 'la la-arrow-down',
+                        asc: 'flaticon2-sort',
+                        desc: 'flaticon2-sort',
 
 
                     },
@@ -68,7 +80,7 @@ var KTDatatableDataLocalDemo = function() {
                     },
                 }
             },
-
+            editable : true,
             rows: {
                 autoHide: false,
                 afterTemplate: function (row, data, index) {
@@ -112,8 +124,6 @@ var KTDatatableDataLocalDemo = function() {
             sortable: true,
 
             pagination: false,
-
-
 
             // columns definition
             columns: [
@@ -198,6 +208,8 @@ var KTDatatableDataLocalDemo = function() {
                 }],
         });
 
+        // datatable.afterRender(e, args);
+
     };
 
 
@@ -208,6 +220,7 @@ var KTDatatableDataLocalDemo = function() {
             demo();
 
         },
+
 
     };
 }();

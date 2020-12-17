@@ -11,10 +11,10 @@
 <div class="mainBg" >
 
 
-  <div class = "kt-container col-md-8">
+  <div class = "kt-container col-md-6">
     <div class = "col-md-12 mt-5 mb-5">
       <h3 class="dayHead col-md-12 mt-5" >
-        <i class="flaticon-delete"></i> &nbspDELETE ACCOUNT
+        <i class="flaticon-delete normalText"></i> &nbspDELETE ACCOUNT
 
       </h3>
 

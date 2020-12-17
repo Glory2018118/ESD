@@ -7,7 +7,7 @@
  */
 ?>
 
-<div class = "kt-container--fluid acoBg mt-5 mb-4 pt-5 pb-5 ">
+<div class = "kt-container--fluid descriptBg descriptBd pt-5 pb-5 ">
 
   <h2 class="kt-align-center dayHead mt-5 mb-5">
     <span class = "mt-5">YOUR DOWNLOADS ARE READY!</span>
@@ -15,8 +15,8 @@
 
 </div>
 
-<div class="kt-container kt-container--fluid faqBg" >
-  <div class = "downBg text-center normalText p-4 textPT11">
+<div class="kt-container kt-container--fluid mainBg" >
+  <div class = "downBg text-center normalText p-4 mt-5 textPT11">
     Thank you for your purchase, you will receive an email containing the summary of your order as well as a link to this download page which will remain active for 72 hours.
     <br>Make sure to save your files locally. See you soon!
 
