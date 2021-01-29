@@ -1,7 +1,7 @@
 'use strict';
 // Class definition
-KTDatatableDataLocalDemo
-var KTDatatableDataLocalDemo = function() {
+KTDatatableDownloads
+var KTDatatableDownloads = function() {
     // Private functions
 
     var demo = function() {
@@ -15,7 +15,7 @@ var KTDatatableDataLocalDemo = function() {
                 source: {
 
                     read: {
-                        url: '/SDmall/data.php',
+                        url: base_url + "download/ajaxDownloadList",
                         map: function(raw) {
 
                             var dataSet = raw;
@@ -28,10 +28,10 @@ var KTDatatableDataLocalDemo = function() {
                     },
 
                 },
-                pageSize: 10, // display 20 records per page
-                serverPaging: true,
-                serverFiltering: true,
-                serverSorting: true,
+                pageSize: 1, // display 20 records per page
+             //   serverPaging: true,
+             //   serverFiltering: true,
+             //   serverSorting: true,
             },
 
             // layout definition
@@ -73,14 +73,6 @@ var KTDatatableDataLocalDemo = function() {
                 autoHide: false,
                 afterTemplate: function (row, data, index) {
                     // if(index) return ;
-                    $('tbody .kt-datatable__row').css({
-                        'margin-top' : 20,
-                        'margin-bottom' : 20,
-
-                        'border-color' : 'none',
-
-                        'box-shadow': '5px 8px rgba(140, 140, 140, 0.05)',
-                    });
 
                     var th = $('th');
                     if(index==0 ) {
@@ -110,7 +102,7 @@ var KTDatatableDataLocalDemo = function() {
             // column sorting
             sortable: true,
 
-            pagination: false,
+            pagination: true,
 
 
 
@@ -125,28 +117,28 @@ var KTDatatableDataLocalDemo = function() {
 
                     // locked: {left: 'xl'},
                     template: function() {
-                        return '<span class="la la-star-o la-lg"></span>';
+                       // return '<span class="la la-star-o la-lg"></span>';
                     },
 
                 }, {
-                    field: 'sport',
-                    title: `<span>SPORT<i class = "flaticon2-sort"></i></span>`,
+                    field: 'Sport',
+                    title: `<span>SPORT</span>`,
                     // locked: {left: 'xl'},
                 }, {
-                    field: 'country',
-                    title: 'COUNTRY<i class = "flaticon2-sort"></i>',
+                    field: 'Country',
+                    title: 'COUNTRY</i>',
 
                 }, {
-                    field: 'competition',
-                    title: 'COMPETITION<i class = "flaticon2-sort"></i>',
+                    field: 'Competition',
+                    title: 'COMPETITION',
                     responsive: {
                         visible: 'md',
                         hidden: 'lg'
                     },
 
                 }, {
-                    field: 'season',
-                    title: 'SEASON<i class = "flaticon2-sort"></i>',
+                    field: 'Season',
+                    title: 'SEASON',
 
 
                     responsive: {
@@ -154,44 +146,43 @@ var KTDatatableDataLocalDemo = function() {
                         hidden: 'lg'
                     }
                 }, {
-                    field: 'matchSummary',
-                    title: 'MATCH&nbspSUMMARY<i class = "flaticon2-sort"></i>',
+                    field: 'MatchSummary',
+                    title: 'MATCH&nbspSUMMARY',
                     width : 170,
 
                 }, {
-                    field: 'detailedStats',
-                    title: 'DETAILED STATS<i class = "flaticon2-sort"></i>',
+                    field: 'DetailedStats',
+                    title: 'DETAILED STATS',
 
                 }, {
-                    field: 'lastUpdate',
-                    title: 'LAST UPDATE<i class = "flaticon2-sort"></i>',
+                    field: 'LastUpdate',
+                    title: 'LAST UPDATE',
                     autoHide: false,
                     type: 'date',
                     // callback function support for column rendering
 
                 }, {
-                    field: 'price',
-                    title: 'PRICE<i class = "flaticon2-sort"></i>',
+                    field: 'Price',
+                    title: 'PRICE',
 
                 }, {
-                    field: 'view',
+                    field: 'ViewSample',
                     title: '',
                     sortable: false,
                     width: 110,
                     autoHide: false,
-                    template: function() {
-                        return '<a href = "#"><span class="viewSample">View Sample</span></a>';
-                    },
+                    // template: function() {
+                    //     return '<a href = "#"><span class="viewsample">View Sample</span></a>';
+                    // },
                 }, {
-                    field: 'add',
+                    field: 'Download',
                     title: '',
                     sortable: false,
                     width: 160,
-
                     autoHide: false,
-                    template: function() {
-                        return '<a href = "#" class="btn btn-md btn-add-cart"> Download&nbsp<i class="flaticon2-download-2"></i></a>';
-                    },
+                    // template: function() {
+                    //     return '<a href = "#" class="btn btn-md btn-addtocart"> Download&nbsp<i class="flaticon2-download-2"></i></a>';
+                    // },
                 }],
         });
 
@@ -211,6 +202,21 @@ var KTDatatableDataLocalDemo = function() {
 
 
 jQuery(document).ready(function() {
-    KTDatatableDataLocalDemo.init();
+    KTDatatableDownloads.init();
 
 });
+
+function viewSampleData(p_id){
+	$.ajax({
+		type: 'POST',
+		url: base_url + "admin/product/ajaxViewSample",
+		data: {
+			product_id : p_id
+		},
+		dataType: "json",
+		success: function(resultData) { 
+			$("#sample_view_modal_content").html(resultData);
+			$("#sample_view_modal").modal();
+		}
+	});
+}

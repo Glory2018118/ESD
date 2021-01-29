@@ -1,0 +1,419 @@
+/*variable*/
+:root {
+    /*colors*/
+    --custom_gray: #888;
+    --custom_gray_1: #eee;
+    --custom_gray_2: #ccc;
+    --custom_gray_3: #9f9f9f;
+    --custom_green: #009245;
+    --custom_white: #ffffff;
+    --custom_black: #2a2a2a;
+    --custom_dark: #4d4d4d;
+    --custom_midDark: #404040;
+    --normal_text_col:  #808080;
+    --normal_text_col_1 : grey;
+
+    /*fonts*/
+    --first_font_family: "Myriad Pro Regular";
+    --second_font_family: "GOTHAM LIGHT";
+}
+
+body.theme_dark {
+    --background_main: var(--custom_dark);
+
+    --normal_text_col: var(--custom_gray_2);
+    --normal_text_col_1 : var(--custom_gray);
+    --globalSearch: var(--custom_dark);
+    --main_background : var(--custom_dark);
+    --aco_background  : var(--custom_black);
+    --faq_background  : var(--custom_midDark);
+    --table_background : var(--custom_dark);
+    --descriptBd : #393939;
+    --downBg : rgb(225, 234, 255);
+    --table_odd : var(--custom_black);
+    --table_even : var(--custom_midDark);
+    --checkbox_background : lightgrey;
+    --star_color : rgba(238, 238, 0, 0.81);
+    --header_background : var(--custom_black);
+    --header_menu_close : #ddd;
+    --theme_panel : var(--custom_dark);
+    --theme_switcher : var(--custom_white);
+    --button_sign_up : var(--custom_gray_2);
+    --footer_top_background : var(--custom_black);
+    --footer_bottom_background : var(--custom_dark);
+    --footer_bottom_link : var(--custom_gray_2);
+    --alert_sec : #0debaa;
+    --form_control_active_border : var(--custom_gray);
+    --form_control_active_background : var(--custom_dark);
+    --form_control_active_color : var(--custom_white);
+
+    --form_control_border : var(--custom_gray_3);
+    --form_control_background : var(--custom_dark);
+    --form_control_color : var(--custom_gray_2);
+    --sort_col : var(--custom_gray_2);
+    --selectpicker : var(--custom_dark);
+    --select_background: var(--custom_dark);
+    --select_color: var(--custom_gray_2);
+    --select_border-color: var(--custom_gray_3);
+    --close:white;
+    --check_out_border:var(--custom_gray_2);
+    --cartHr : var(--custom_gray_2);
+    --error_body : var(--custom_black);
+
+
+
+}
+
+
+body:not(.theme_dark) {
+    --background_main: var(--custom_white);
+    --globalSearch: var(--custom_gray);
+    --main_background : red;
+    --aco_background  : #d3d3d3a3;
+    --faq_background  :  #ece5e52b;
+    --table_background : white;
+    --descriptBd : whitesmoke;
+    --downBg : rgba(140, 211, 255, 0.3);
+    --table_odd : whitesmoke;
+    --table_even : white;
+    --checkbox_background : lightgrey;
+    --star_color : rgba(238, 238, 0, 0.81);
+    --header_background : var(--custom_white);
+    --header_menu_close : #ddd;
+    --theme_panel : #e6e6e6;
+    --theme_switcher : var(--custom_white);
+    --button_sign_up : white;
+
+    --footer_top_background : var(--custom_gray_1);
+    --footer_bottom_background : var(--custom_gray_2);
+    --footer_bottom_link : var(--custom_green);
+    --alert_sec : #0debaa;
+    --form_control_active_border : var(--custom_green);
+    --form_control_active_background : white;
+    --form_control_active_color : var(--normal_text_col_1);
+
+    --form_control_border :  var(--custom_gray_2);
+    --form_control_background : white;
+    --form_control_color : var(--normal_text_col_1);
+    --sort_col : var(--normal_text_col_1);
+    --selectpicker : var(--custom_dark);
+    --select_background: white;
+    --select_color: var(--normal_text_col_1);
+    --select_border-color: var(--custom_gray_2);
+    --close:white;
+    --check_out_border:var(--custom_gray_2);
+    --cartHr : var(--custom_gray_2);
+    --error_body : var(--custom_black);
+}
+
+
+.cartHr{
+    border-style: dashed !important;
+    border-block-start-width: 2px;
+}
+
+.underlineText{
+    text-decoration: underline;
+}
+
+
+
+
+.textSize16{
+    font-size : 16pt !important;
+}
+.textSize20{
+    font-size : 20pt !important;
+}
+
+.textRed{
+    color : red;
+}
+
+.textBold{
+    font-weight: bold !important;
+}
+
+.dayHead{
+    color : var(--custom_green) !important;
+}
+
+
+.textPT11{
+    font-size : 11pt;
+}
+.btn-add{
+}
+
+.globalS{
+    border-color : var(--globalSearch) !important;
+}
+
+.normalText{
+    color : var(--normal_text_col) !important;
+}
+
+.normalText1{
+    color : var(--normal_text_col_1) !important;
+}
+
+.normalText a{
+    color : var(--normal_text_col) !important;
+}
+.card {
+    margin : 20px !important;
+}
+
+.card-body{
+    color : var(--normal_text_col) !important;
+}
+
+.mainBg{
+    background : var(--main_background) !important;
+}
+
+.acoBg{
+    background: var(--aco_background);
+}
+
+.faqBg{
+    background: var(--faq_background);
+}
+
+.kt-datatable__table {
+    background: var(--table_background) !important;
+}
+
+td span{
+    color : var(--normal_text_col) !important;
+}
+
+.descriptBg{
+    background: var(--faq_background);
+    padding : 20px;
+}
+
+.descriptBd{
+    border : 0px solid var(--descriptBd);
+    border-bottom-width: 2px;
+}
+
+.downBg{
+    background : var(--downBg);
+    color : grey !important;
+}
+
+
+.kt-datatable__body tr:nth-child(odd) {
+    background-color: var(--table_odd) !important;
+}
+.kt-datatable__body tr:nth-child(even) {
+    background-color: var(--table_even) !important;
+}
+
+.kt-checkbox span{
+    background : var(--checkbox_background) !important;
+}
+
+#invoiceTable thead {
+    margin-bottom: 30px;
+}
+
+/*for hr*/
+/*for table*/
+.kt-datatable > .kt-datatable__table > .kt-datatable__head .kt-datatable__row{
+    /*color : red;*/
+    border-bottom-color: var(--custom_green);
+    border-bottom-width: 7px;
+
+}
+
+th span{
+    color : var(--custom_green) !important;
+    font-weight: bolder;
+}
+
+.tableHeadHr{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 3px;
+    color : green;
+}
+
+.viewSample{
+    color : var(--custom_green) !important;
+    text-decoration: underline;
+}
+.la-star{
+    color : var(--star_color) !important;
+}
+
+
+.flaticon2-sort{
+    color : var(--normal_text_col) !important;
+}
+
+/*for header*/
+
+
+
+
+/*for button*/
+
+
+/*for select input*/
+
+.bootstrap-select.show > .dropdown-toggle.btn-light, .bootstrap-select.show > .dropdown-toggle.btn-secondary,.bootstrap-select > .dropdown-toggle.btn-light:focus, .bootstrap-select > .dropdown-toggle.btn-light.active, .bootstrap-select > .dropdown-toggle.btn-secondary:focus, .bootstrap-select > .dropdown-toggle.btn-secondary.active {
+
+    border-color : var(--custom_green) !important;
+}
+
+
+.form-control:focus, .form-control:active{
+    border-color : var(--custom_green) !important;
+}
+
+.btn.btn-save{
+    color: var(--button_sign_up);
+    background-color: var(--custom_green);
+    font-size: 14pt;
+    font-family: var(--first_font_family);
+    padding: 10px 40px;
+    border:none;
+}
+
+.btn.btn-globalSearch{
+    display:inline-flex;
+    z-index:0;
+    color: var(--button_sign_up);
+    background-color: var(--custom_green);
+    font-size: 14pt;
+    font-family: var(--first_font_family);
+    padding-left: 4px;
+    padding-right: 2px;
+
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin : 0px;
+}
+
+.btn.btn-add-cart{
+    color: var(--custom_white);
+    background-color: var(--custom_green);
+    font-size: 14pt;
+    font-family: var(--first_font_family);
+    /*padding: 5px 20px;*/
+}
+
+.btn.btn-checkout{
+    color: var(--custom_white);
+    background-color: var(--custom_green);
+    font-size: 12pt;
+    font-family: var(--first_font_family);
+    padding: 5px 20px;
+}
+
+.btn.btn-login>a:hover, .btn.btn-login>a:focus{
+    color : var(--normal_text_col_1);
+    text-decoration: underline;
+}
+
+.kt-header-menu .kt-menu__nav > .kt-menu__item:hover:not(.kt-menu__item--here):not(.kt-menu__item--active) > .kt-menu__link .kt-menu__link-text, .kt-header-menu .kt-menu__nav > .kt-menu__item.kt-menu__item--hover:not(.kt-menu__item--here):not(.kt-menu__item--active) > .kt-menu__link .kt-menu__link-text{
+    color : var(--normal_text_col_1) !important;
+}
+
+.cartBg{
+    background: var(--custom_midDark);
+    border : var(--custom_gray_2) 1px solid;
+
+}
+
+
+/*for footer*/
+
+.kt-mycart__item .alert .alert-secondary {
+    background: var(--alert_sec) !important;
+}
+
+.form-control:focus, .form-control:active {
+    border-color: var(--form_control_active_border) !important;
+    background: var(--form_control_active_background) !important;
+    color : var(--form_control_active_color) !important;
+}
+
+.form-control {
+    border-color: var(--form_control_border) !important;
+    background: var(--form_control_background) !important;
+    color : var(--form_control_color) !important;
+    /*border-color : var(--custom_dark);*/
+}
+
+
+.flaticon2-sort{
+    color : var(--sort_col) !important;
+}
+
+.selectpicker{
+    background: var(--selectpicker);
+    border: none;
+}
+
+.kt-datatable.kt-datatable--default > .kt-datatable__table > .kt-datatable__body .kt-datatable__row.kt-datatable__row--active > .kt-datatable__cell{
+    background: var(--custom_gray_3 ) !important;
+}
+
+.kt-checkbox > span:after {
+    border: solid #353c0e;
+}
+
+
+.bootstrap-select > .dropdown-toggle.btn-light, .bootstrap-select > .dropdown-toggle.btn-secondary{
+    background: var(--select_background);
+    color: var(--select_color) !important;
+    border-color: var(--select_border-color) !important;;
+}
+
+.close:hover{
+    color : var(--close);
+}
+
+
+#checkOutCart .kt-mycart__body .kt-mycart__section .kt-mycart__item {
+    background: none;
+    border-style: solid;
+    border-width: 1px;
+    color : var(--check_out_border);
+}
+
+.cartHr{
+    border-color : var(--cartHr) !important;
+}
+
+.body{
+    color : var(--error_body) !important;
+}
+
+.card{
+    border :none;
+}
+
+
+
+/*//add for admin*/
+.btn-add {
+    background: var(--custom_green);
+    color: var(--button_sign_up);
+    margin: 0px;
+    padding: 7px;
+}
+
+.btn-add:hover{
+    text-decoration: none;
+    color : var(--button_sign_up);
+}
+
+.kt-switch.kt-switch--outline.kt-switch--brand input:checked ~ span:after{
+    background-color: var(--custom_green);
+}

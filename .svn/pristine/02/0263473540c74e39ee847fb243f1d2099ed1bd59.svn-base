@@ -1,0 +1,250 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: DREAM
+ * Date: 12/14/2020
+ * Time: 9:46 AM
+ */
+?>
+
+<div class = "descriptBg">
+  <div class = "kt-content ">
+    <div class = "container dayHead textSize20 textBold" align ="center">
+      CHECK OUT
+    </div>
+  </div>
+  <hr>
+  <div class = "container-fluid col-md-12 ml-5 ">
+    <div class = "row mt-5">
+      <div class = "col-md-3">
+        <div class="mycart-menu cartBg">
+          <div class = "kt-form kt-form--label-right">
+            <!-- begin:: Mycart -->
+            <div class="kt-mycart p-3">
+              <div class="kt-mycart__head p-0">
+                <div class="kt-mycart__info">
+                  <span class="kt-mycart__title pl-2">Order Summary</span>
+                </div>
+              </div>
+              <div class="kt-mycart__body kt-scroll" data-scroll="true" data-height="auto" data-mobile-height="200">
+                <div class="kt-mycart__section">
+                  <div class="kt-mycart__item alert alert-secondary alert-dismissible p-2 m-2">
+                    <span>France-Ligue 1 - 2019 - 2020</span>
+                    <button type="button" class="close p-2 m-0" data-dismiss="alert">&times;</button>
+                  </div>
+                  <div class="kt-mycart__item alert alert-secondary alert-dismissible p-2 m-2">
+                    <span>France-Ligue 1 - 2019 - 2020</span>
+                    <button type="button" class="close p-2 m-0" data-dismiss="alert">&times;</button>
+                  </div>
+                  <div class="kt-mycart__item alert alert-secondary alert-dismissible p-2 m-2">
+                    <span>France-Ligue 1 - 2019 - 2020</span>
+                    <button type="button" class="close p-2 m-0" data-dismiss="alert">&times;</button>
+                  </div>
+                </div>
+                <div class="kt-mycart__section m-2 mt-3 mb-5">
+                  <div class = "row ml-2 mb-5">
+                    <span class="kt-mycart__subtitle">3 items in cart</span>
+                  </div>
+                  <div class = "row ml-2 mb-2">
+                    <span class = "kt-mycart__subtitle col-md-4 ml-0 pl-0">Coupon Code</span>
+                    <input class = "form-control col-md-7" align = "right" name = "couponCode">
+                  </div>
+                  <button typ="button" class="btn update-cart p-0"> Update cart <i class="flaticon-refresh"></i></button>
+                </div>
+                <div class="kt-mycart__section p-1 ml-2 ">
+                  <div class="kt-mycart__price  p-1">
+                    <span class="kt-mycart__subtitle normalText">Subtotal:</span>
+                    <span class="ml-3 float-right">€ 2.97</span>
+
+                  </div>
+                  <div class="kt-mycart__price  p-1">
+                    <span class="kt-mycart__subtitle normalText">Taxation:</span>
+                    <span class="kt-mycart__price float-right ml-3">€ 0.74</span>
+                  </div>
+                  <hr>
+                  <div class="kt-mycart__price  p-1">
+                    <span class="kt-mycart__subtitle textSize16">Order Total:</span>
+                    <span class="kt-mycart_price float-right ml-3">€ 3.71</span>
+                  </div>
+                </div>
+              </div>
+              <div class="kt-mycart__footer p-0">
+                <div class="kt-mycart__button kt-align-right">
+                  <a href = "<?=base_url()?>checkout"><button type="button" class="btn btn-checkout">Checkout</button></a>
+                </div>
+              </div>
+            </div>
+            <!-- end:: Mycart -->
+          </divform>
+        </div>
+      </div>
+    </div>
+      <div class = "col-md-9">
+        <div class = "container-fluid">
+          <div class = "mb-5">
+          <div>
+            <h3 class="dayHead mb-4" >
+                Billing Information
+            </h3>
+          </div>
+          <p class = "normalText">Choose a payment option below and ll out the appropriate information.</p>
+          <div class = "col-md-12">
+            <button class = "btn btn-signup" id = "creditCard">Credit card</button>
+            <button class = "btn btn-signup" id = "payPal">PayPal</button>
+          </div>
+
+          </div>
+          <div class = "row">
+
+            <div class = "col-md-6">
+              <div class = "container-fluid row normalText">
+
+                <div class = "mb-3">
+                  <h3 class="dayHead" >
+                    1. Billing Address
+                  </h3>
+                </div>
+                <form class="myNavBg  col-md-12">
+
+                  <div class="">
+
+                    <div class="form-group row">
+                      <label class=" pl-0 ml-1">FULL NAME</label>
+                      <input type="text" class="col-md-12 form-control" name = "fullName">
+                    </div>
+
+                    <div class="form-group row">
+                      <label>EMAIL ADDRESS</label>
+                      <input type="email" class="form-control" name = "emailAddress">
+
+                    </div>
+
+                    <div class="form-group row">
+                      <label>BILLING ADDRESS</label>
+                      <input type="email" class="form-control" name = "billingAddress">
+
+                    </div>
+
+                    <div class="form-group row">
+                      <label class=" pl-0 ml-1">CITY</label>
+                      <input type="text" class="col-md-12 form-control" name = "city">
+                    </div>
+                    <div class = "form-group row">
+                      <div class = "col-md-6 pl-0">
+                        <label class="p-0">COUNTRY</label>
+                        <input type="text" class="form-control" name = "country">
+                      </div>
+                      <div class = "col-md-6 pl-0">
+                        <label class="p-0">ZIP CODE</label>
+                        <input type="text" class="form-control" name = "zipCode">
+                      </div>
+                    </div>
+                    <div class = "form-group row">
+                      <label class="kt-checkbox kt-checkbox--bold">
+                        <input type="checkbox"> Create new account
+                        <span></span>
+                      </label>
+                    </div>
+                    <div class = "form-group row">
+                      <div class = "col-md-6 pl-0">
+                        <label class="p-0">NEW PASSWORD</label>
+                        <input type="text" class="form-control" name = "newPassword">
+                      </div>
+                      <div class = "col-md-6 pl-0 mb-5">
+                        <label class="p-0">REPEAT PASSWORD</label>
+                        <input type="text" class="form-control" name = "repeatPassword">
+                      </div>
+                    </div>
+
+
+
+
+                  </div>
+
+
+                </form>
+
+
+              </div>
+            </div>
+            <div class = "col-md-6">
+              <div class = "container-fluid row normalText">
+
+                <div class = "mb-3">
+                  <h3 class="dayHead" >
+                    2. Credit Card Information
+                  </h3>
+                </div>
+                <form class="col-md-12">
+
+                  <div class="">
+
+                    <div class="form-group row">
+                      <label class=" pl-0 ml-1">NAME ON CARD</label>
+                      <input type="text" class="col-md-12 form-control" name = "nameOnCard">
+                    </div>
+
+                    <div class="form-group row">
+                      <label>CARD NUMBER</label>
+                      <input type="email" class="form-control" name = "cardNumber">
+
+                    </div>
+
+
+                    <div class = "form-group row">
+                      <div class = "col-md-4 pl-0">
+                        <label class="p-0">CCV NUMBER</label>
+                        <div class="kt-input-icon kt-input-icon--right">
+
+                          <input type="text" class="form-control" name = "ccvNumber">
+                          <span class="kt-input-icon__icon kt-input-icon__icon--right">
+                            <span><i class="la la-question-circle"></i></span>
+                          </span>
+                        </div>
+
+                      </div>
+                      <div class = "col-md-4 pl-0">
+                        <label class="p-0">EXP MONTH</label>
+                        <input type="text" class="form-control" name = "expMonth">
+                      </div>
+                      <div class = "col-md-4 pl-0">
+                        <label class="p-0">EXP YEAR</label>
+                        <input type="text" class="form-control" name = "expYear">
+                      </div>
+                    </div>
+                    <div class = "form-group row">
+                      <label class="kt-checkbox kt-checkbox--bold">
+                        <input type="checkbox"> I have read and accept the terms & conditions
+                        <span></span>
+                      </label>
+                      <label class="kt-checkbox kt-checkbox--bold">
+                        <input type="checkbox"> I understand and agree that since my files will be downloadable
+                        immediately after payment, no refund will be possible.
+                        <span></span>
+                      </label>
+
+                    </div>
+                    <div class = "form-group row mt-5">
+                      <button class = "btn btn-signup" id = "payNow">Pay Now</button>
+                    </div>
+
+
+
+
+                  </div>
+
+
+                </form>
+
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+  </div>
+
+
+</div>

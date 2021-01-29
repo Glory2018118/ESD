@@ -1,0 +1,67 @@
+/*variable*/
+:root {
+    --custom_green: #12d269;
+}
+
+/*for text*/
+
+.myText{
+    color :  var(--custom_green);
+}
+
+.signUpButton{
+    background : var(--custom_green);
+    color : white;
+}
+
+.textSize16{
+    font-size : 16px;
+}
+/*for navvar*/
+
+
+.myNavBg{
+    background-color: white;
+
+}
+
+.navHeadItem{
+    color : var(--custom_green);
+    font-size : 16px;
+    font-family: Constantia;
+    padding: 2px;
+}
+
+nav li:hover{
+    text-decoration: underline;
+
+}
+
+nav a:hover{
+    color : var(--custom_green);
+}
+
+nav > ul > li > div > .dropdown-item:hover{
+    color : var(--custom_green);
+    text-decoration: underline;
+}
+
+nav > ul > li > div > a:hover{
+    text-decoration: underline !important;
+}
+
+
+
+/*.navMenuLink a:hover{*/
+    /*background-color : white !important;*/
+    /*text-decoration: underline;*/
+/*}*/
+
+/*.navMenuLink a:active{*/
+    /*background-color : white !important;*/
+    /*text-decoration: none;*/
+/*}*/
+
+.theme_panel {
+    background-color: black;
+}

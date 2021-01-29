@@ -1,0 +1,46 @@
+"use strict";
+var initTable1 = function() {
+    var table = $('#kt_table_1');
+
+    // begin first table
+    table.DataTable({
+        responsive: true,
+        columnDefs: [
+            {
+                targets: -1,
+                title: 'Actions',
+                orderable: false,
+                render: function(data, type, full, meta) {
+                    return `
+                      
+                        <a href="#" class = "dayHead editTable kt-menu__link"><i class="la la-edit la-2x"></i>  </a>
+                      
+                      `;
+                },
+            }
+        ],
+    });
+
+};
+
+var KTDatatablesDataSourceHtml = function() {
+
+    return {
+
+        //main function to initiate the module
+        init: function() {
+            initTable1();
+        },
+
+    };
+
+}();
+
+jQuery(document).ready(function() {
+    $('body').on('click', '.kt-menu__link[href="#"]', function(e) {
+        swal.fire("Coming Soon...", "You have clicked on a non-functional dummy link!");
+
+        e.preventDefault();
+    });
+    KTDatatablesDataSourceHtml.init();
+});

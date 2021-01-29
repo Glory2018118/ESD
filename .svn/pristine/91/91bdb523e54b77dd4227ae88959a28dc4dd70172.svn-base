@@ -1,0 +1,286 @@
+/*for text*/
+
+.normalText{
+    color : var(--custom_white) !important;
+}
+.normalTextNotImp{
+    color : var(--normal_text_col) !important;
+}
+.normalText a{
+    color : var(--normal_text_col) !important;
+}
+.card {
+    margin : 20px !important;
+}
+
+.card-body{
+    color : var(--normal_text_col) !important;
+}
+
+
+.textSize16{
+    font-size : 16pt !important;
+}
+.textSize20{
+    font-size : 20pt !important;
+}
+.textRed{
+    color : red;
+}
+.textBold{
+    font-weight: bold !important;
+}
+.dayHead{
+    color : var(--custom_green) !important;
+}
+
+.mainBg{
+    background : var(--custom_dark);
+}
+
+
+.acoBg{
+    background: #d3d3d3a3;
+}
+
+.faqBg{
+    background: #ece5e52b;
+}
+
+.kt-datatable{
+    background: var(--custom_dark);
+}
+.descriptBg{
+    background: var(--custom_black);
+    padding : 20px;
+}
+
+.descriptBd{
+    border : 0px solid lightgrey;
+    border-bottom-width: 2px;
+}
+
+.downBg{
+    background : rgba(140, 211, 255, 0.3);
+}
+.textPT11{
+    font-size : 11pt;
+}
+#myDownloadTable .kt-datatable__table{
+    background: whitesmoke;
+}
+#myDownloadTable .kt-datatable__body tr:nth-child(even) {
+    background: white !important;
+}
+
+.kt-checkbox span{
+    background : lightgrey !important;
+}
+
+#invoiceTable thead {
+    margin-bottom: 30px;
+}
+/*for hr*/
+/*for table*/
+.kt-datatable > .kt-datatable__table > .kt-datatable__head .kt-datatable__row{
+    /*color : red;*/
+    border-bottom-color: var(--custom_green);
+    border-bottom-width: 7px;
+
+
+}
+
+
+th span{
+    color : var(--custom_green) !important;
+    font-weight: bolder;
+}
+.tableHeadHr{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 3px;
+    color : green;
+}
+
+.viewSample{
+    color : var(--custom_green) !important;
+    text-decoration: underline;
+}
+.la-star{
+    color : rgba(238, 238, 0, 0.81);
+}
+
+
+.flaticon2-sort{
+    color : var(--normal_text_col) !important;
+}
+/*for header*/
+.kt-header {
+    background-color: var(--custom_black) !important;
+}
+.kt-header-menu .kt-menu__nav > .kt-menu__item:hover:not(.kt-menu__item--here):not(.kt-menu__item--active) > .kt-menu__link,
+.kt-header-menu .kt-menu__nav > .kt-menu__item.kt-menu__item--hover:not(.kt-menu__item--here):not(.kt-menu__item--active) > .kt-menu__link {
+    background-color: var(--custom_black) !important;
+}
+.kt-header-menu .kt-menu__nav > .kt-menu__item > .kt-menu__link .kt-menu__link-text,
+.kt-header-menu .kt-menu__nav > .kt-menu__item > .kt-menu__link .kt-menu__ver-arrow,
+.kt-header-menu .kt-menu__nav > .kt-menu__item:hover > .kt-menu__link .kt-menu__link-text,
+.kt-header-menu .kt-menu__nav > .kt-menu__item:hover > .kt-menu__link .kt-menu__ver-arrow,
+.kt-header-menu-wrapper-close > i {
+    color: var(--custom_green) !important;
+}
+.kt-header-menu .kt-menu__subnav > .kt-menu__item > .kt-menu__link .kt-menu__link-text {
+    color: var(--normal_text_col) !important;
+}
+.kt-header-menu .kt-menu__subnav > .kt-menu__item > .kt-menu__link .kt-menu__link-text:hover {
+    color: var(--custom_green) !important;
+}
+.kt-header-menu-wrapper-close:hover {
+    background-color: #ddd;
+}
+.kt-header-mobile .kt-header-mobile__toolbar .kt-header-mobile__toolbar-toggler:hover span,
+.kt-header-mobile .kt-header-mobile__toolbar .kt-header-mobile__toolbar-toggler:hover span::before,
+.kt-header-mobile .kt-header-mobile__toolbar .kt-header-mobile__toolbar-toggler:hover span::after,
+.kt-header-mobile .kt-header-mobile__toolbar .kt-header-mobile__toolbar-toggler.kt-header-mobile__toolbar-toggler--active span,
+.kt-header-mobile .kt-header-mobile__toolbar .kt-header-mobile__toolbar-toggler.kt-header-mobile__toolbar-toggler--active span::before,
+.kt-header-mobile .kt-header-mobile__toolbar .kt-header-mobile__toolbar-toggler.kt-header-mobile__toolbar-toggler--active span::after {
+    background-color: var(--custom_green) !important;
+}
+.kt-header-mobile .kt-header-mobile__toolbar .kt-header-mobile__toolbar-topbar-toggler.kt-header-mobile__toolbar-topbar-toggler--active i,
+.kt-header-mobile .kt-header-mobile__toolbar .kt-header-mobile__toolbar-topbar-toggler:hover i {
+    color: var(--custom_green) !important;
+}
+
+.theme_panel{
+    border-color: var(--custom_dark) !important;
+    background-color: var(--custom_dark) !important;
+}
+.theme_switcher{
+    background-color: var(--custom_white) !important;
+    border-color: #888888;
+}
+
+/*for button*/
+.btn.btn-cart{
+    color: var(--custom_green);
+}
+.btn.btn-login>a,
+.btn.btn-login>a:active,
+.btn.btn-login>a:focus,
+.btn.btn-login>a:hover{
+    color: var(--custom_green);
+}
+.btn.btn-signup{
+    color: var(--custom_white);
+    background-color: var(--custom_green);
+    font-size: 14pt;
+    font-family: var(--first_font_family);
+    padding: 5px 20px;
+}
+
+/*for select input*/
+
+.bootstrap-select.show > .dropdown-toggle.btn-light, .bootstrap-select.show > .dropdown-toggle.btn-secondary,.bootstrap-select > .dropdown-toggle.btn-light:focus, .bootstrap-select > .dropdown-toggle.btn-light.active, .bootstrap-select > .dropdown-toggle.btn-secondary:focus, .bootstrap-select > .dropdown-toggle.btn-secondary.active {
+
+    border-color : var(--custom_green) !important;
+}
+
+.form-control:focus, .form-control:active{
+    border-color : var(--custom_green) !important;
+}
+.btn.btn-save{
+    color: var(--custom_white);
+    background-color: var(--custom_green);
+    font-size: 14pt;
+    font-family: var(--first_font_family);
+    padding: 10px 40px;
+}
+
+.btn.btn-globalSearch{
+    display:inline-flex;
+    z-index:0;
+    color: var(--custom_white);
+    background-color: var(--custom_green);
+    font-size: 14pt;
+    font-family: var(--first_font_family);
+    padding-left: 4px;
+    padding-right: 2px;
+
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin : 0px;
+}
+
+.btn.btn-add-cart{
+    color: var(--custom_white);
+    background-color: var(--custom_green);
+    font-size: 14pt;
+    font-family: var(--first_font_family);
+    /*padding: 5px 20px;*/
+}
+.btn.btn-checkout{
+    color: var(--custom_white);
+    background-color: var(--custom_green);
+    font-size: 12pt;
+    font-family: var(--first_font_family);
+    padding: 5px 20px;
+}
+
+div.user-account.dropdown-menu>a.dropdown-item{
+    color : var(--normal_text_col);
+}
+div.user-account.dropdown-menu>a.dropdown-item:active,
+div.user-account.dropdown-menu>a.dropdown-item:focus,
+div.user-account.dropdown-menu>a.dropdown-item:hover{
+    color: var(--custom_green);
+    background-color: var(--custom_white) !important;
+}
+
+.cartBg{
+    background: #e2e2e2;
+;
+
+}
+.kt-mycart .kt-mycart__head .kt-mycart__info .kt-mycart__title,
+.kt-mycart .kt-mycart__body .kt-mycart__section .kt-mycart__subtitle{
+    color: var(--custom_green);
+}
+.kt-mycart .kt-mycart__body .kt-mycart__section .kt-mycart__price{
+    color: var(--normal_text_col);
+}
+.kt-mycart .kt-mycart__body .kt-mycart__section .update-cart{
+    color: var(--normal_text_col);
+}
+
+
+/*for footer*/
+.kt-footer .kt-footer__top {
+    background-color: var(--custom_black) !important;
+}
+.kt-footer .kt-footer__top a{
+    color: var(--normal_text_col) !important;
+}
+.kt-footer .kt-footer__top a:hover {
+    color: var(--custom_green) !important;
+}
+.kt-footer .kt-footer__bottom {
+    background-color: var(--custom_dark) !important;
+}
+.kt-footer .kt-footer__bottom a{
+    color: var(--normal_text_col) !important;
+}
+.kt-footer .kt-footer__bottom a:hover {
+    color: var(--custom_green) !important;
+    cursor: pointer;
+}
+.kt-footer .kt-footer__bottom span{
+    color: var(--normal_text_col) !important;
+}
+
+.form-control:focus, .form-control:active {
+    border-color: var(--custom_gray);
+}
+
+/*for icon*/

@@ -1,7 +1,7 @@
 'use strict';
 // Class definition
-KTDatatableDataLocalDemo
-var KTDatatableDataLocalDemo = function() {
+KTDatatableFavorites
+var KTDatatableFavorites = function() {
     // Private functions
 
     var demo = function() {
@@ -15,7 +15,7 @@ var KTDatatableDataLocalDemo = function() {
                 source: {
 
                     read: {
-                        url: '/SDmall/data.php',
+                        url: base_url+'favourite/ajaxFavouriteList',
                         map: function(raw) {
 
                             var dataSet = raw;
@@ -28,10 +28,10 @@ var KTDatatableDataLocalDemo = function() {
                     },
 
                 },
-                pageSize: 10, // display 20 records per page
-                serverPaging: true,
-                serverFiltering: true,
-                serverSorting: true,
+                pageSize: 1, // display 20 records per page
+              //  serverPaging: true,
+              //  serverFiltering: true,
+              //  serverSorting: true,
             },
 
             // layout definition
@@ -59,8 +59,6 @@ var KTDatatableDataLocalDemo = function() {
                     sort: {
                         asc: 'la la-arrow-up',
                         desc: 'la la-arrow-down',
-
-
                     },
                     rowDetail: {
                         expand: 'fa fa-caret-down',
@@ -73,15 +71,6 @@ var KTDatatableDataLocalDemo = function() {
                 autoHide: false,
                 afterTemplate: function (row, data, index) {
                     // if(index) return ;
-                    $('tbody .kt-datatable__row').css({
-                        'margin-top' : 20,
-                        'margin-bottom' : 20,
-
-
-                        'border-color' : 'none',
-
-                        'box-shadow': '5px 8px rgba(140, 140, 140, 0.05)',
-                    });
 
                     var th = $('th');
                     if(index==0 ) {
@@ -96,25 +85,19 @@ var KTDatatableDataLocalDemo = function() {
                         var span = $(":first", cel);
                         span = $(":first", span);
                         if(span.hasClass('la-star-o')) {
-                            span.removeClass('la-star-o');
-                            span.addClass('la-star');
+                            //span.removeClass('la-star-o');
+                            //span.addClass('la-star');
                         } else {
-                            span.removeClass('la-star');
-                            span.addClass('la-star-o');
+                            //span.removeClass('la-star');
+                            //span.addClass('la-star-o');
                         }
-
-
                     });
                 }
             },
 
             // column sorting
             sortable: true,
-
-            pagination: false,
-
-
-
+            pagination: true,
             // columns definition
             columns: [
                 {
@@ -125,22 +108,22 @@ var KTDatatableDataLocalDemo = function() {
                     type: 'number',
                     textAlign: 'center',
                     // locked: {left: 'xl'},
-                    template: function() {
+                    template: function(data) {
                         return '<span class="la la-star la-lg"></span>';
                     },
 
                 }, {
-                    field: 'sport',
-                    title: `<span>SPORT<i class = "flaticon2-sort"></i></span>`,
+                    field: 'Sport',
+                    title: `<span>SPORT</span>`,
                     // locked: {left: 'xl'},
                 }, {
-                    field: 'country',
-                    title: 'COUNTRY<i class = "flaticon2-sort"></i>',
+                    field: 'Country',
+                    title: 'COUNTRY',
                     textAlign: 'center',
 
                 }, {
-                    field: 'competition',
-                    title: 'COMPETITION<i class = "flaticon2-sort"></i>',
+                    field: 'Competition',
+                    title: 'COMPETITION',
                     textAlign: 'center',
                     responsive: {
                         visible: 'md',
@@ -148,8 +131,8 @@ var KTDatatableDataLocalDemo = function() {
                     },
 
                 }, {
-                    field: 'season',
-                    title: 'SEASON<i class = "flaticon2-sort"></i>',
+                    field: 'Season',
+                    title: 'SEASON',
                     textAlign: 'center',
 
                     responsive: {
@@ -157,46 +140,46 @@ var KTDatatableDataLocalDemo = function() {
                         hidden: 'lg'
                     }
                 }, {
-                    field: 'matchSummary',
-                    title: 'MATCH&nbspSUMMARY<i class = "flaticon2-sort"></i>',
+                    field: 'MatchSummary',
+                    title: 'MATCH&nbspSUMMARY',
                     width : 170,
                     textAlign: 'center',
                 }, {
-                    field: 'detailedStats',
-                    title: 'DETAILED STATS<i class = "flaticon2-sort"></i>',
+                    field: 'DetailedStats',
+                    title: 'DETAILED STATS',
 
                 }, {
-                    field: 'lastUpdate',
-                    title: 'LAST UPDATE<i class = "flaticon2-sort"></i>',
+                    field: 'LastUpdate',
+                    title: 'LAST UPDATE',
                     autoHide: false,
                     type: 'date',
                     textAlign: 'center',
                     // callback function support for column rendering
 
                 }, {
-                    field: 'price',
-                    title: 'PRICE<i class = "flaticon2-sort"></i>',
+                    field: 'Price',
+                    title: 'PRICE',
                     textAlign: 'center',
                 }, {
-                    field: 'view',
+                    field: 'ViewSample',
                     title: '',
                     sortable: false,
                     width: 110,
                     autoHide: false,
                     textAlign: 'center',
-                    template: function() {
-                        return '<a href = "#"><span class="viewSample">View Sample</span></a>';
-                    },
+                    // template: function() {
+                    //     return '<a href = "#"><span class="viewsample">View Sample</span></a>';
+                    // },
                 }, {
-                    field: 'add',
+                    field: 'AddCart',
                     title: '',
                     sortable: false,
                     width: 160,
                     textAlign: 'center',
                     autoHide: false,
-                    template: function() {
-                        return '<a href = "#" class="btn btn-md btn-add-cart"> Add&nbspto&nbspcart<i class="la la-lg m-0 la-shopping-cart"></i></a>';
-                    },
+                    // template: function() {
+                    //     return '<a href = "#" class="btn btn-md btn-addtocart"> Add&nbspto&nbspcart<i class="la la-lg m-0 la-shopping-cart"></i></a>';
+                    // },
                 }],
         });
 
@@ -216,6 +199,21 @@ var KTDatatableDataLocalDemo = function() {
 
 
 jQuery(document).ready(function() {
-    KTDatatableDataLocalDemo.init();
+    KTDatatableFavorites.init();
 
 });
+
+function viewSampleData(p_id){
+	$.ajax({
+		type: 'POST',
+		url: base_url + "admin/product/ajaxViewSample",
+		data: {
+			product_id : p_id
+		},
+		dataType: "json",
+		success: function(resultData) { 
+			$("#sample_view_modal_content").html(resultData);
+			$("#sample_view_modal").modal();
+		}
+	});
+}

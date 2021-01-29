@@ -1,0 +1,298 @@
+
+
+<!-- end::Head -->
+
+<!-- begin::Body -->
+<body class="kt-page--loading-enabled kt-page--loading kt-quick-panel--right kt-demo-panel--right kt-offcanvas-panel--right kt-header--fixed kt-header--minimize-topbar kt-header-mobile--fixed kt-subheader--enabled kt-subheader--transparent kt-page--loading">
+
+<div id="kt_header_mobile" class="kt-header-mobile  kt-header-mobile--fixed ">
+  <div class="kt-header-mobile__logo">
+    <a href="<?=base_url()?>">
+      <img alt="Logo" src="<?=base_url()?>assets/media/logos/logo-2-sm.png" />
+    </a>
+  </div>
+  <div class="kt-header-mobile__toolbar">
+    <button class="kt-header-mobile__toolbar-toggler" id="kt_header_mobile_toggler"><span></span></button>
+    <button class="kt-header-mobile__toolbar-topbar-toggler" id="kt_header_mobile_topbar_toggler"><i class="flaticon-more-1"></i></button>
+  </div>
+</div>
+
+<!-- end:: Header Mobile -->
+<div class="kt-grid kt-grid--hor kt-grid--root">
+  <div class="kt-grid__item kt-grid__item--fluid kt-grid kt-grid--ver kt-page">
+    <div class="kt-grid__item kt-grid__item--fluid kt-grid kt-grid--hor kt-wrapper" id="kt_wrapper">
+
+      <!-- begin:: Header -->
+      <div id="kt_header" class="kt-header kt-grid__item  kt-header kt-header--fixed " data-ktheader-minimize="on">
+        <div class="kt-header__top myNavBg">
+          <div class="kt-container col-md-12">
+
+
+            <!-- begin:: Brand -->
+            <div class="col-md-2 kt-header__brand   kt-grid__item mb" id="kt_header_brand">
+              <div class="kt-header__brand-logo">
+                <a href="<?=base_url()?>">
+                  <img alt="Logo" src="<?=base_url()?>assets/media/logos/logo-2.png" class="kt-header__brand-logo-default" />
+                  <img alt="Logo" src="<?=base_url()?>assets/media/logos/logo-2-sm.png" class="kt-header__brand-logo-sticky" />
+                </a>
+              </div>
+
+            </div>
+
+            <!-- end:: Brand -->
+            <div class = "kt-header-menu-wrapper">
+
+              <nav class="navbar navbar-expand-sm myNavBg">
+
+                <!-- Links -->
+                <ul class="navbar-nav">
+
+                  <!-- Dropdown -->
+                  <li class="nav-item dropdown navHeadItem">
+                    <a class="nav-link dropdown-toggle navHeadItem" href="#" id="navbardrop" data-toggle="dropdown">
+                      Football
+                    </a>
+                    <div class="dropdown-menu ">
+                      <a class="dropdown-item" href="#">UEFA Champion League</a>
+                      <a class="dropdown-item" href="#">World Cup</a>
+                      <a class="dropdown-item" href="#">England</a>
+                    </div>
+                  </li>
+                  <li class="nav-item dropdown navHeadItem">
+                    <a class="nav-link dropdown-toggle navHeadItem" href="#" id="navbardrop" data-toggle="dropdown">
+                      Basketball
+                    </a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#">UEFA Champion League</a>
+                      <a class="dropdown-item" href="#">World Cup</a>
+                      <a class="dropdown-item" href="#">England</a>
+                    </div>
+                  </li>
+                  <li class="nav-item dropdown navHeadItem">
+                    <a class="nav-link dropdown-toggle navHeadItem" href="#" id="navbardrop" data-toggle="dropdown">
+                      Tennis
+                    </a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#">UEFA Champion League</a>
+                      <a class="dropdown-item" href="#">World Cup</a>
+                      <a class="dropdown-item" href="#">England</a>
+                    </div>
+                  </li>
+                  <li class="nav-item dropdown navHeadItem">
+                    <a class="nav-link dropdown-toggle navHeadItem" href="#" id="navbardrop" data-toggle="dropdown">
+                      Baseball
+                    </a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#">UEFA Champion League</a>
+                      <a class="dropdown-item" href="#">World Cup</a>
+                      <a class="dropdown-item" href="#">England</a>
+                    </div>
+                  </li>
+                  <li class="nav-item dropdown navHeadItem">
+                    <a class="nav-link dropdown-toggle navHeadItem" href="#" id="navbardrop" data-toggle="dropdown">
+                      AM Football
+                    </a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#">UEFA Champion League</a>
+                      <a class="dropdown-item" href="#">World Cup</a>
+                      <a class="dropdown-item" href="#">England</a>
+                    </div>
+                  </li>
+                  <li class="nav-item dropdown navHeadItem">
+                    <a class="nav-link dropdown-toggle navHeadItem" href="#" id="navbardrop" data-toggle="dropdown">
+                      Cricket
+                    </a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#">UEFA Champion League</a>
+                      <a class="dropdown-item" href="#">World Cup</a>
+                      <a class="dropdown-item" href="#">England</a>
+                    </div>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class=" kt-header__topbar">
+
+              <div class="kt-header__topbar-item kt-header__topbar-item--user" >
+                <div class = "kt-header__topbar-wrapper">
+                  <div class = "btn btn-secondary theme_panel">
+                    <div class = "theme_style theme_day active" theme-style="day"></div>
+                    <div class = "theme_style theme_night" theme-style="night"></div>
+                    <div class = "theme_switcher"></div>
+                    <!-- <img src="assets/media/icons/svg/Weather/Sun.svg"/>
+                    <img src="assets/media/icons/svg/Weather/Moon.svg"/> -->
+                  </div>
+                </div>
+                <!--begin: My cart -->
+                <div class="kt-header__topbar-item dropdown">
+                  <div class="kt-header__topbar-wrapper" data-toggle="dropdown" data-offset="10px,10px">
+
+                    <button type="button" class="btn btn-light btn-solid"><i class="flaticon2-shopping-cart-1"></i></button>
+
+                  </div>
+                  <div class="dropdown-menu dropdown-menu-fit dropdown-menu-right dropdown-menu-anim dropdown-menu-xl">
+                    <form>
+
+                      <!-- begin:: Mycart -->
+                      <div class="kt-mycart">
+                        <div class="kt-mycart__head kt-head m-2">
+                          <div class="kt-mycart__info">
+                            <h3 class="kt-mycart__title myText">My Cart</h3>
+                          </div>
+
+                        </div>
+                        <div class="kt-mycart__body kt-scroll" data-scroll="true" data-height="auto" data-mobile-height="200">
+                          <div class="kt-mycart__item">
+                            <div class="kt-mycart__container pt-0 pb-0">
+                              <div class="p-2 m-1 kt-mycart__item container-fluid alert  fade show alert-secondary alert-dismissible">
+                                <strong>France-Ligue 1 - 2019 - 2020</strong>
+
+                                <button type="button" class="close" data-dismiss="alert">&times;</button>
+
+                              </div>
+
+
+
+                            </div>
+                          </div>
+                          <div class="kt-mycart__item">
+                            <div class="kt-mycart__container pt-0 pb-0">
+                              <div class="p-2 m-1 kt-mycart__item container-fluid alert  fade show alert-secondary alert-dismissible">
+                                <strong>France-Ligue 1 - 2019 - 2020</strong>
+
+                                <button type="button" class="close" data-dismiss="alert">&times;</button>
+
+                              </div>
+
+
+
+                            </div>
+                          </div>
+                        </div>
+                        <div class="kt-mycart__footer">
+                          <div class="kt-mycart__section">
+                            <div class="kt-mycart__subtitel myText">
+                              2 items in Cart
+                            </div>
+                            <div class="kt-mycart__prices">
+                              <button class="btn"> Update cart <i class="flaticon-refresh"></i></button>
+                            </div>
+                          </div>
+                          <div class="kt-mycart__section">
+                            <div class="kt-mycart__subtitel ml-5 pl-5">
+                              <span class="myText ml-5 pl-5">Sub Total:</span>
+                              <span class="myText ml-5 pl-5">Taxation:</span>
+                              <span class="myText ml-5 pl-5">Total:</span>
+                            </div>
+                            <div class="kt-mycart__prices">
+                              <span>$ 840.00</span>
+                              <span>$ 72.00</span>
+                              <span class="kt-font-brand">$ 912.00</span>
+                            </div>
+                          </div>
+                          <div class="kt-mycart__button kt-align-right">
+                            <button type="button" class="btn btn-primary btn-sm signUpButton">Checkout</button>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- end:: Mycart -->
+                    </form>
+                  </div>
+                </div>
+
+                <!--end: My cart-->
+
+
+                <!--begin: User bar -->
+                <div class="kt-header__topbar-item kt-header__topbar-item--user">
+
+                  <?php
+                  if(isset($_SESSION['userName'])) { ?>
+                    <div class="kt-header__topbar-wrapper" data-toggle="dropdown" data-offset="10px,10px" aria-expanded="false">
+                      <span class="kt-header__topbar textSize16 myText">Hi,</span>
+                      <span class="kt-header__topbar mr-3 textSize16  myText"><?=$_SESSION['userName']?></span>
+
+
+                      <!--use below badge element instead the user avatar to display username's first letter(remove kt-hidden class to display it) -->
+
+                    </div>
+                    <button class="btn signUpButton" id = "signOut">Log&nbspOut</button>
+                    <div class="dropdown-menu dropdown-menu-fit dropdown-menu-right dropdown-menu-anim dropdown-menu-sm-right">
+
+
+
+                      <!--begin: Navigation -->
+                      <div class="">
+                        <a href="<?=base_url()?>myaccount/accountinfo" class="dropdown-item userNav">
+
+                          <div class="kt-notification__item-details normalText userNavItem">
+                            My Account
+                          </div>
+                        </a>
+                        <a href="<?=base_url()?>myaccount/favourite" class="dropdown-item  userNav">
+
+                          <div class="kt-notification__item-details normalText userNavItem">
+                            Favourites
+                          </div>
+                        </a>
+                        <a href="<?=base_url()?>myaccount/download" class="dropdown-item userNav">
+
+                          <div class="kt-notification__item-details normalText userNavItem">
+                            Downloads
+                          </div>
+                        </a>
+                        <a href="<?=base_url()?>myaccount/invoice" class="dropdown-item userNav">
+
+                          <div class="kt-notification__item-details normalText userNavItem">
+                            Invoices
+                          </div>
+                        </a>
+                        <a href="<?=base_url()?>myaccount/bill" class="dropdown-item userNav">
+
+                          <div class="kt-notification__item-details normalText userNavItem">
+                            Billing Information
+                          </div>
+                        </a>
+                        <a href="<?=base_url()?>myaccount/accountaccess" class="dropdown-item userNav">
+
+                          <div class="kt-notification__item-details normalText userNavItem">
+                            Account Access
+                          </div>
+                        </a>
+
+                      </div>
+
+                      <!--end: Navigation -->
+                    </div>
+                    <?php
+                  } else {?>
+                    <div class="kt-header__topbar-wrapper" >
+                      <button class = "btn btn-lg"><a class = "myText" href = "login.php">Login</a></button>
+
+                    </div>
+                    <div class="kt-header__topbar-wrapper" ><button class = "btn signUpButton"> Sign&nbspUp </button></div>
+
+                    <?php
+
+                  }
+                  ?>
+
+                </div>
+
+                <!--end: User bar -->
+              </div>
+
+              <!-- end:: Header Topbar -->
+            </div>
+
+
+
+          </div>
+        </div>
+
+      </div>
+
+      <!-- end:: Header -->
+      <div class="kt-body kt-grid__item kt-grid__item--fluid kt-grid kt-grid--hor kt-grid--stretch" id="kt_body">
+        <div class="kt-content  kt-grid__item kt-grid__item--fluid kt-grid kt-grid--hor" id="kt_content">

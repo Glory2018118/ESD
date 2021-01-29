@@ -1,0 +1,75 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: DREAM
+ * Date: 12/14/2020
+ * Time: 8:41 AM
+ */
+?>
+
+
+<div class="mainBg" >
+
+
+  <div class = "kt-container col-md-6">
+    <div class = "col-md-12 mt-5 mb-5">
+      <h3 class="dayHead col-md-12" >
+        <i class="flaticon-delete"></i> &nbspDELETE ACCOUNT
+
+      </h3>
+
+    </div>
+
+    <form class="col-md-12">
+
+      <div class="kt-form normalText">
+        <div class = "form-group ">
+          <div class = "col-md-12">
+            We are sad that you want to leave us...<br>
+            Can you tell us more about experience?
+          </div>
+        </div>
+        <div class = "form-group ">
+          <div class = "col-md-12">
+            <label>Leave your comment</label>
+            <textarea class = "form-control" name = "leaveComment"></textarea>
+          </div>
+          </div>
+        <div class="form-group ">
+          <div class = "col-md-6 ml-0">
+            <label>Enter Password</label>
+            <input type="password" class="form-control" name = "password">
+          </div>
+          <div class = "col-md-6">
+            <label>Repeat Password</label>
+            <input type="password" class="form-control" name = "repeatPassword">
+          </div>
+
+        </div>
+        <div class = "form-group col-md-12">
+
+
+            <label class="kt-checkbox kt-checkbox--bold">
+              <input type="checkbox"> By deleting my account, i assume that all data concerning me is permanentlyerased.
+              <br>I will  no longer be able to access my account and my downloads.
+              <br>I have save my files locally.
+              <span></span>
+            </label>
+
+          
+        </div>
+        <div class="form-group col-md-12">
+          <button type="submit" class="btn btn-md btn-signup">request cancellation of this account</button>
+
+        </div>
+
+
+      </div>
+
+
+    </form>
+
+
+  </div>
+</div>
+

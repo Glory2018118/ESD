@@ -1,0 +1,60 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: DREAM
+ * Date: 12/12/2020
+ * Time: 9:28 AM
+ */
+?>
+<?php
+class MyAccount extends CI_Controller
+{
+  public function __construct()
+  {
+    parent::__construct();
+    $this->load->helper('url_helper');
+    $this->load->library('session');
+  }
+
+  public function _remap($page)
+  {
+    $title = array(
+      'accountinfo' => 'Account Information',
+      'accountaccess' => 'MY ACCOUNT',
+      'bill' => 'Billing Information',
+      'accountdelete' => 'Delete account',
+      'favourite' => 'Favourites',
+      'download' => 'downloads',
+      'invoice' => 'invoices'
+    );
+    $desc = array(
+      'accountinfo' => 'Last Activity: 09/12/2020 - 2:30 pm',
+      'accountaccess' => 'Last Activity: 09/12/2020 - 2:30 pm',
+      'bill' => 'Last Activity: 09/12/2020 - 2:30 pm',
+      'accountdelete' => 'Last Activity: 09/12/2020 - 2:30 pm',
+      'favourite' => 'Last Activity: 09/12/2020 - 2:30 pm',
+      'download' => 'Last Activity: 09/12/2020 - 2:30 pm',
+      'invoice' => 'Last Activity: 09/12/2020 - 2:30 pm'
+    );
+    $navigation = array(
+      'accountinfo' => 'My account&nbsp/&nbspAccount access',
+      'accountaccess' => 'My account&nbsp/&nbspAccount access',
+      'bill' => 'My account&nbsp/&nbspAccount access',
+      'accountdelete' => 'My account&nbsp/&nbspAccount access',
+      'favourite' => 'My account&nbsp/&nbspAccount access',
+      'download' => 'My account&nbsp/&nbspAccount access',
+      'invoice' => 'My account&nbsp/&nbspAccount access'
+    );
+    $data['title'] = $title[$page];
+    $data['description'] = $desc[$page];
+    $data['navigation'] = $navigation[$page];
+
+    $this->load->view('common/header_html');
+    $this->load->view('common/header');
+    $this->load->view('common/sub_header', $data);
+    $this->load->view($page);
+    $this->load->view('common/footer');
+    $this->load->view('common/footer_html');
+  }
+}
+?>

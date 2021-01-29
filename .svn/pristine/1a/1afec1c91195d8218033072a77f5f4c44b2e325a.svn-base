@@ -1,0 +1,369 @@
+
+
+<!-- end::Head -->
+
+<!-- begin::Body -->
+<body class="kt-header--fixed kt-header--minimize-topbar kt-subheader--enabled kt-subheader--transparent ">
+
+<div id="kt_header_mobile" class="kt-header-mobile  kt-header-mobile--fixed ">
+  <div class="kt-header-mobile__logo">
+    <a href="index.php">
+      <img alt="Logo" src="assets/media/logos/logo-2-sm.png" />
+    </a>
+  </div>
+  <div class="kt-header-mobile__toolbar">
+    <button class="kt-header-mobile__toolbar-toggler" id="kt_header_mobile_toggler"><span></span></button>
+    <button class="kt-header-mobile__toolbar-topbar-toggler" id="kt_header_mobile_topbar_toggler"><i class="flaticon-more-1"></i></button>
+  </div>
+</div>
+
+<!-- end:: Header Mobile -->
+<div class="">
+  <div class="">
+    <div class="" id="kt_wrapper">
+
+      <!-- begin:: Header -->
+      <div id="kt_header" class="kt-header kt-grid__item  kt-header kt-header--fixed " data-ktheader-minimize="on">
+        <div class="kt-header__top myNavBg">
+          <div class="kt-container col-md-12">
+
+            <!-- begin:: Brand -->
+            <div class="col-md-2 kt-header__brand   kt-grid__item mb" id="kt_header_brand">
+              <div class="kt-header__brand-logo">
+                <a href="index.php">
+                  <img alt="Logo" src="assets/media/logos/logo-2.png" class="kt-header__brand-logo-default" />
+                  <img alt="Logo" src="assets/media/logos/logo-2-sm.png" class="kt-header__brand-logo-sticky" />
+                </a>
+              </div>
+
+            </div>
+
+            <!-- end:: Brand -->
+            <div class = "kt-header-menu-wrapper">
+
+              <nav class="navbar navbar-expand-sm myNavBg">
+
+                <!-- Links -->
+                <ul class="navbar-nav">
+
+                  <!-- Dropdown -->
+                  <li class="nav-item dropdown navHeadItem">
+                    <a class="nav-link dropdown-toggle navHeadItem" href="#" id="navbardrop" data-toggle="dropdown">
+                      Football
+                    </a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#">UEFA Champion League</a>
+                      <a class="dropdown-item" href="#">World Cup</a>
+                      <a class="dropdown-item" href="#">England</a>
+                    </div>
+                  </li>
+                  <li class="nav-item dropdown navHeadItem">
+                    <a class="nav-link dropdown-toggle navHeadItem" href="#" id="navbardrop" data-toggle="dropdown">
+                      Basketball
+                    </a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#">UEFA Champion League</a>
+                      <a class="dropdown-item" href="#">World Cup</a>
+                      <a class="dropdown-item" href="#">England</a>
+                    </div>
+                  </li>
+                  <li class="nav-item dropdown navHeadItem">
+                    <a class="nav-link dropdown-toggle navHeadItem" href="#" id="navbardrop" data-toggle="dropdown">
+                      Tennis
+                    </a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#">UEFA Champion League</a>
+                      <a class="dropdown-item" href="#">World Cup</a>
+                      <a class="dropdown-item" href="#">England</a>
+                    </div>
+                  </li>
+                  <li class="nav-item dropdown navHeadItem">
+                    <a class="nav-link dropdown-toggle navHeadItem" href="#" id="navbardrop" data-toggle="dropdown">
+                      Baseball
+                    </a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#">UEFA Champion League</a>
+                      <a class="dropdown-item" href="#">World Cup</a>
+                      <a class="dropdown-item" href="#">England</a>
+                    </div>
+                  </li>
+                  <li class="nav-item dropdown navHeadItem">
+                    <a class="nav-link dropdown-toggle navHeadItem" href="#" id="navbardrop" data-toggle="dropdown">
+                      AM Football
+                    </a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#">UEFA Champion League</a>
+                      <a class="dropdown-item" href="#">World Cup</a>
+                      <a class="dropdown-item" href="#">England</a>
+                    </div>
+                  </li>
+                  <li class="nav-item dropdown navHeadItem">
+                    <a class="nav-link dropdown-toggle navHeadItem" href="#" id="navbardrop" data-toggle="dropdown">
+                      Cricket
+                    </a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#">UEFA Champion League</a>
+                      <a class="dropdown-item" href="#">World Cup</a>
+                      <a class="dropdown-item" href="#">England</a>
+                    </div>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+
+
+            <!-- begin:: Header Topbar -->
+            <div class=" kt-header__topbar">
+
+              <div class="kt-header__topbar-item kt-header__topbar-item--user" >
+                <div class = "kt-header__topbar-wrapper">
+                  <button class = "btn btn-secondary" id = "switchDayNight"> Day/Night</div>
+              </div>
+              <!--begin: My cart -->
+              <div class="kt-header__topbar-item dropdown">
+                <div class="kt-header__topbar-wrapper" data-toggle="dropdown" data-offset="10px,10px">
+
+                  <button type="button" class="btn btn-light btn-solid"><i class="flaticon2-shopping-cart-1"></i></button>
+
+                </div>
+                <div class="dropdown-menu dropdown-menu-fit dropdown-menu-right dropdown-menu-anim dropdown-menu-xl">
+                  <form>
+
+                    <!-- begin:: Mycart -->
+                    <div class="kt-mycart">
+                      <div class="kt-mycart__head kt-head" style="background-image: url(assets/media/misc/bg-1.jpg);">
+                        <div class="kt-mycart__info">
+                          <span class="kt-mycart__icon"><i class="flaticon2-shopping-cart-1 kt-font-success"></i></span>
+                          <h3 class="kt-mycart__title">My Cart</h3>
+                        </div>
+                        <div class="kt-mycart__button">
+                          <button type="button" class="btn btn-success btn-sm" style=" ">2 Items</button>
+                        </div>
+                      </div>
+                      <div class="kt-mycart__body kt-scroll" data-scroll="true" data-height="245" data-mobile-height="200">
+                        <div class="kt-mycart__item">
+                          <div class="kt-mycart__container">
+                            <div class="kt-mycart__info">
+                              <a href="#" class="kt-mycart__title">
+                                Samsung
+                              </a>
+                              <span class="kt-mycart__desc">
+																		Profile info, Timeline etc
+																	</span>
+                              <div class="kt-mycart__action">
+                                <span class="kt-mycart__price">$ 450</span>
+                                <span class="kt-mycart__text">for</span>
+                                <span class="kt-mycart__quantity">7</span>
+                                <a href="#" class="btn btn-label-success btn-icon">&minus;</a>
+                                <a href="#" class="btn btn-label-success btn-icon">&plus;</a>
+                              </div>
+                            </div>
+                            <a href="#" class="kt-mycart__pic">
+                              <img src="assets/media/products/product9.jpg" title="">
+                            </a>
+                          </div>
+                        </div>
+                        <div class="kt-mycart__item">
+                          <div class="kt-mycart__container">
+                            <div class="kt-mycart__info">
+                              <a href="#" class="kt-mycart__title">
+                                Panasonic
+                              </a>
+                              <span class="kt-mycart__desc">
+																		For PHoto & Others
+																	</span>
+                              <div class="kt-mycart__action">
+                                <span class="kt-mycart__price">$ 329</span>
+                                <span class="kt-mycart__text">for</span>
+                                <span class="kt-mycart__quantity">1</span>
+                                <a href="#" class="btn btn-label-success btn-icon">&minus;</a>
+                                <a href="#" class="btn btn-label-success btn-icon">&plus;</a>
+                              </div>
+                            </div>
+                            <a href="#" class="kt-mycart__pic">
+                              <img src="assets/media/products/product13.jpg" title="">
+                            </a>
+                          </div>
+                        </div>
+                        <div class="kt-mycart__item">
+                          <div class="kt-mycart__container">
+                            <div class="kt-mycart__info">
+                              <a href="#" class="kt-mycart__title">
+                                Fujifilm
+                              </a>
+                              <span class="kt-mycart__desc">
+																		Profile info, Timeline etc
+																	</span>
+                              <div class="kt-mycart__action">
+                                <span class="kt-mycart__price">$ 520</span>
+                                <span class="kt-mycart__text">for</span>
+                                <span class="kt-mycart__quantity">6</span>
+                                <a href="#" class="btn btn-label-success btn-icon">&minus;</a>
+                                <a href="#" class="btn btn-label-success btn-icon">&plus;</a>
+                              </div>
+                            </div>
+                            <a href="#" class="kt-mycart__pic">
+                              <img src="assets/media/products/product16.jpg" title="">
+                            </a>
+                          </div>
+                        </div>
+                        <div class="kt-mycart__item">
+                          <div class="kt-mycart__container">
+                            <div class="kt-mycart__info">
+                              <a href="#" class="kt-mycart__title">
+                                Candy Machine
+                              </a>
+                              <span class="kt-mycart__desc">
+																		For PHoto & Others
+																	</span>
+                              <div class="kt-mycart__action">
+                                <span class="kt-mycart__price">$ 784</span>
+                                <span class="kt-mycart__text">for</span>
+                                <span class="kt-mycart__quantity">4</span>
+                                <a href="#" class="btn btn-label-success btn-icon">&minus;</a>
+                                <a href="#" class="btn btn-label-success btn-icon">&plus;</a>
+                              </div>
+                            </div>
+                            <a href="#" class="kt-mycart__pic">
+                              <img src="assets/media/products/product15.jpg" title="" alt="">
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="kt-mycart__footer">
+                        <div class="kt-mycart__section">
+                          <div class="kt-mycart__subtitel">
+                            <span>Sub Total</span>
+                            <span>Taxes</span>
+                            <span>Total</span>
+                          </div>
+                          <div class="kt-mycart__prices">
+                            <span>$ 840.00</span>
+                            <span>$ 72.00</span>
+                            <span class="kt-font-brand">$ 912.00</span>
+                          </div>
+                        </div>
+                        <div class="kt-mycart__button kt-align-right">
+                          <button type="button" class="btn btn-primary btn-sm">Place Order</button>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- end:: Mycart -->
+                  </form>
+                </div>
+              </div>
+
+              <!--end: My cart-->
+
+
+              <!--begin: User bar -->
+              <div class="kt-header__topbar-item kt-header__topbar-item--user">
+
+                <?php
+                if(isset($_SESSION['userName'])) { ?>
+                  <div class="kt-header__topbar-wrapper" data-toggle="dropdown" data-offset="10px,10px" aria-expanded="false">
+                    <span class="kt-header__topbar textSize16 myText">Hi,</span>
+                    <span class="kt-header__topbar mr-3 textSize16  myText"><?=$_SESSION['userName']?></span>
+
+
+                    <!--use below badge element instead the user avatar to display username's first letter(remove kt-hidden class to display it) -->
+
+                  </div>
+                  <button class="btn signUpButton" id = "signOut">Log&nbspOut</button>
+                  <div class="dropdown-menu dropdown-menu-fit dropdown-menu-right dropdown-menu-anim dropdown-menu-xl">
+
+                    <!--begin: Head -->
+                    <div class="kt-user-card kt-user-card--skin-dark kt-notification-item-padding-x" style="background-image: url(assets/media/misc/bg-1.jpg)">
+                      <div class="kt-user-card__avatar">
+                        <img class="kt-hidden" alt="Pic" src="assets/media/users/300_25.jpg" />
+
+                        <!--use below badge element instead the user avatar to display username's first letter(remove kt-hidden class to display it) -->
+                        <span class="kt-badge kt-badge--lg kt-badge--rounded kt-badge--bold kt-font-success">S</span>
+                      </div>
+                      <div class="kt-user-card__name">
+                        Sean Stone
+                      </div>
+                      <div class="kt-user-card__badge">
+                        <span class="btn btn-success btn-sm btn-bold btn-font-md">23 messages</span>
+                      </div>
+                    </div>
+
+                    <!--end: Head -->
+
+                    <!--begin: Navigation -->
+                    <div class="kt-notification">
+                      <a href="profile.php" class="kt-notification__item">
+                        <div class="kt-notification__item-icon">
+                          <i class="flaticon2-calendar-3 kt-font-success"></i>
+                        </div>
+                        <div class="kt-notification__item-details">
+                          <div class="kt-notification__item-title kt-font-bold">
+                            My Profile
+                          </div>
+                          <div class="kt-notification__item-time">
+                            Account settings and more
+                          </div>
+                        </div>
+                      </a>
+                      <a href="custom/apps/user/profile-3.html" class="kt-notification__item">
+                        <div class="kt-notification__item-icon">
+                          <i class="flaticon2-mail kt-font-warning"></i>
+                        </div>
+                        <div class="kt-notification__item-details">
+                          <div class="kt-notification__item-title kt-font-bold">
+                            My Messages
+                          </div>
+                          <div class="kt-notification__item-time">
+                            Inbox and tasks
+                          </div>
+                        </div>
+                      </a>
+                      <a href="custom/apps/user/profile-1/overview.html" class="kt-notification__item">
+                        <div class="kt-notification__item-icon">
+                          <i class="flaticon2-cardiogram kt-font-warning"></i>
+                        </div>
+                        <div class="kt-notification__item-details">
+                          <div class="kt-notification__item-title kt-font-bold">
+                            Billing
+                          </div>
+                          <div class="kt-notification__item-time">
+                            billing & statements <span class="kt-badge kt-badge--danger kt-badge--inline kt-badge--pill kt-badge--rounded">2 pending</span>
+                          </div>
+                        </div>
+                      </a>
+                      <div class="kt-notification__custom kt-space-between">
+
+                        <a href="custom/user/login-v2.html" target="_blank" class="btn btn-clean btn-sm btn-bold">Upgrade Plan</a>
+                      </div>
+                    </div>
+
+                    <!--end: Navigation -->
+                  </div>
+                  <?php
+                } else {?>
+                  <div class="kt-header__topbar-wrapper" >
+                    <button class = "btn btn-lg"><a class = "myText" href = "login.php">Login</a></button>
+
+                  </div>
+                  <div class="kt-header__topbar-wrapper" ><button class = "btn signUpButton"> Sign&nbspUp </button></div>
+
+                  <?php
+
+                }
+                ?>
+
+              </div>
+
+              <!--end: User bar -->
+            </div>
+
+            <!-- end:: Header Topbar -->
+          </div>
+        </div>
+
+      </div>
+
+      <!-- end:: Header -->
+      <div class="kt-body kt-grid__item kt-grid__item--fluid kt-grid kt-grid--hor kt-grid--stretch" id="kt_body">
+        <div class="kt-content  kt-grid__item kt-grid__item--fluid kt-grid kt-grid--hor" id="kt_content">

@@ -1,0 +1,13 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: DREAM
+ * Date: 12/10/2020
+ * Time: 6:13 PM
+ */
+?>
+<?php
+  session_start();
+  $_SESSION['dispMode'] = 1 - $_SESSION['dispMode'];
+
+?>

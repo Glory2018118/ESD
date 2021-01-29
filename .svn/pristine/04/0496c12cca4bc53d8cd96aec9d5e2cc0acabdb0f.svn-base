@@ -1,0 +1,14 @@
+#Set Environment(development,testing,production)
+CI_ENV=""
+APP_NAME=""
+APP_KEY=
+APP_URL='10.99.4.108/SDmall'
+
+#Database Settings
+DB_HOSTNAME=localhost
+DB_DATABASE=SDmall
+DB_USERNAME=SDmall
+DB_PASSWORD=SDmall
+DB_PREFIX=
+DB_CHAT_SET=utf8mb4
+DB_COLLATION=utf8mb4_general_ci

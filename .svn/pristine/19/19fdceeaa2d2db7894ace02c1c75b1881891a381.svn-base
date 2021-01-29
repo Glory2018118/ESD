@@ -1,0 +1,155 @@
+<!--
+Created by
+User: Dream
+Date: 2020.12.16
+Time: AM 10:00
+-->
+
+<?php
+
+defined('BASEPATH') OR exit('No direct script access allowed');
+
+class User extends CI_Controller
+{
+
+  private $registerErrors = array();
+  private $user_id;
+  private $num_rows = 5;
+
+  public function __construct()
+  {
+    parent::__construct();
+    $this -> load -> helper('url_helper');
+    $this->load->library('session');
+//    $this->load->library('email');
+//    session_start();
+  }
+
+  public function _remap($method, $params = array())
+  {
+    $method = $method;
+
+    if (method_exists($this, $method))
+    {
+      return call_user_func_array(array($this, $method), $params);
+    }
+  }
+
+  public function login()
+  {
+    if (isset($_POST['login']) || 1) {
+      //$result = $this->User_model->checkUser($_POST);
+      $result = true;
+      if (isset($_GET['username'])) {
+        $_SESSION['userName'] = $this->input->get('username');
+
+        redirect(base_url());
+        return ;
+      } else {
+        $this->session->set_flashdata('userError', 'wrong_user');
+      }
+    }
+//    $head['title'] = lang('user_login');
+//    $head['description'] = lang('user_login');
+//    $head['keywords'] = str_replace(" ", ",", $head['title']);
+    $this->load->view('common/header_html');
+    $this->load->view('common/header');
+    $this->load->view('login');
+    $this->load->view('common/footer');
+    $this->load->view('common/footer_html');
+
+  }
+
+  public function signup()
+  {
+    if (isset($_POST['signup']) || 1) {
+//      $result = $this->registerValidate();
+      $result = true;
+      if (!isset($_GET['username'])) {
+        $this->session->set_flashdata('userError', $this->registerErrors);
+      } else {
+        $_SESSION['userName'] = $this->input->post('userName'); //id of user
+        login();
+        return ;
+      }
+    }
+    $this->load->view('common/header_html');
+    $this->load->view('common/header');
+    $this->load->view('signup');
+    $this->load->view('common/footer');
+    $this->load->view('common/footer_html');
+  }
+
+  public function forget() {
+    $this->load->view('common/header_html');
+    $this->load->view('common/header');
+    $this->load->view('forget');
+    $this->load->view('common/footer');
+    $this->load->view('common/footer_html');
+  }
+
+  public function myaccount($page = 0)
+  {
+    if (isset($_POST['update'])) {
+      $_POST['id'] = $_SESSION['logged_user'];
+      $count_emails = $this->Public_model->countPublicUsersWithEmail($_POST['email'], $_POST['id']);
+      if ($count_emails == 0) {
+        $this->Public_model->updateProfile($_POST);
+      }
+      redirect(LANG_URL . '/myaccount');
+    }
+    $head = array();
+    $data = array();
+    $head['title'] = lang('my_acc');
+    $head['description'] = lang('my_acc');
+    $head['keywords'] = str_replace(" ", ",", $head['title']);
+    $data['userInfo'] = $this->Public_model->getUserProfileInfo($_SESSION['logged_user']);
+    $rowscount = $this->Public_model->getUserOrdersHistoryCount($_SESSION['logged_user']);
+    $data['orders_history'] = $this->Public_model->getUserOrdersHistory($_SESSION['logged_user'], $this->num_rows, $page);
+    $data['links_pagination'] = pagination('myaccount', $rowscount, $this->num_rows, 2);
+    $this->render('user', $head, $data);
+  }
+
+  public function logout()
+  {
+//    session_unset();
+    var_dump($_SESSION);
+    unset($_SESSION['userName']);
+    redirect(base_url());
+  }
+
+  private function registerValidate()
+  {
+    $errors = array();
+    if (mb_strlen(trim($_POST['name'])) == 0) {
+      $errors[] = lang('please_enter_name');
+    }
+    if (mb_strlen(trim($_POST['phone'])) == 0) {
+      $errors[] = lang('please_enter_phone');
+    }
+    if (!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
+      $errors[] = lang('invalid_email');
+    }
+    if (mb_strlen(trim($_POST['pass'])) == 0) {
+      $errors[] = lang('enter_password');
+    }
+    if (mb_strlen(trim($_POST['pass_repeat'])) == 0) {
+      $errors[] = lang('repeat_password');
+    }
+    if ($_POST['pass'] != $_POST['pass_repeat']) {
+      $errors[] = lang('passwords_dont_match');
+    }
+
+    $count_emails = $this->Public_model->countPublicUsersWithEmail($_POST['email']);
+    if ($count_emails > 0) {
+      $errors[] = lang('user_email_is_taken');
+    }
+    if (!empty($errors)) {
+      $this->registerErrors = $errors;
+      return false;
+    }
+    $this->user_id = $this->Public_model->registerUser($_POST);
+    return true;
+  }
+
+}

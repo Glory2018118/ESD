@@ -1,0 +1,52 @@
+
+var ThemeSwitcher = function() {
+    return {
+        init: function() {
+            var theme_panel = $(".theme_panel");
+            function switchTheme (theme) {
+                $("#theme_style_css").attr("href", "assets/css/themes/" + theme + ".css");
+            };
+
+            theme_panel.click(function() {
+                var theme_styles = $(".theme_style", $(this));
+                var active_theme = $(".theme_style:not(.active)");
+                var theme = active_theme.attr("theme-style");
+                switchTheme(theme);
+                theme_styles.removeClass("active");
+                active_theme.addClass("active");
+                if (theme == "day") {
+                    $(".theme_switcher", $(this)).css("left", "2px"); $(".theme_switcher", $(this)).css("right", "auto");
+                } else if (theme == "night") {
+                    $(".theme_switcher", $(this)).css("left", "auto"); $(".theme_switcher", $(this)).css("right", "2px");
+                }
+            });
+        }
+    }
+}();
+
+jQuery(document).ready(function() {
+
+    ThemeSwitcher.init();
+
+    $('#signOut').on('click', function(){
+
+        $.post({
+
+            url: 'logout.php',
+            success: function(response, status, xhr, $form) {
+                // similate 2s delay
+
+                if(status == "success") {
+
+                    window.location.reload();
+                    return ;
+                }
+
+                setTimeout(function() {
+                    btn.removeClass('kt-spinner kt-spinner--right kt-spinner--sm kt-spinner--light').attr('disabled', false);
+                    showErrorMsg(form, 'danger', 'Incorrect username or password. Please try again.');
+                }, 2000);
+            }
+        });
+    });
+});

@@ -1,0 +1,44 @@
+.theme_panel {
+    width: 50px;
+    height: 26px;
+    border-radius: 13px;
+    display: flex;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+    margin: 0 10px;
+}
+
+.theme_style.theme_day {
+    background-image: url(icons/day-night.svg);
+    background-position: -56px 4px;
+    z-index: 1;
+    width: 24px;
+    height: 24px;
+    transition: filter .25s ease;
+    /* filter: brightness(1.4); */
+    position: absolute;
+    left: 0px;
+}
+
+.theme_style.theme_night {
+    background-image: url(icons/day-night.svg);
+    background-position: 5px 5px;
+    z-index: 1;
+    width: 24px;
+    height: 24px;
+    transition: filter .25s ease;    
+    position: absolute;
+    right: 0px;
+}
+
+.theme_switcher {
+    width: 24px;
+    height: 24px;
+    border-radius: 100%;
+    background-color: #e6e6e6;
+    position: absolute;
+    transition: left .25s ease,background-color .25s;
+    top: 0;
+    left: 0;
+}
